@@ -1,0 +1,16 @@
+ <a href="/">
+    <h1>LOGO</h1>
+ </a>
+ <!--For form default method is get, we don't have to set that but her for consistancy I'm setting it. -->
+<form method="GET" action="{% url 'home' %}">
+   <!-- we don't need to add csrf token because it's a get method. -->
+   <input type="text" name="q" placeholder="Search Rooms..." />
+</form>
+
+{% if request.user.is_authenticated %}
+<p>Hello {{request.user}}</p>
+<a href="{% url 'logout' %}">Logout</a>
+{%else%}
+<a href="{% url 'login' %}">Login</a>
+{% endif %}
+ <hr>
