@@ -109,10 +109,3 @@ LETS_BUDDY/
 - [ ] Room-level moderation tools
 - [ ] Write/create endpoints for the API
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/<your-username>/LETS_BUDDY/issues) if you want to contribute.
